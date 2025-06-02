@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2017",           // para qual versão do JS vai compilar
+    "module": "commonjs",         // tipo de módulo (Node.js usa commonjs)
+    "outDir": "./dist",           // pasta onde o JS compilado vai ficar
+    "rootDir": "./src",           // pasta onde o TS vai estar
+    "strict": true,               // ativa várias verificações rígidas
+    "esModuleInterop": true,      // facilita import/export
+    "forceConsistentCasingInFileNames": true
+  }
+}
