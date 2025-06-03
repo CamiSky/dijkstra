@@ -108,7 +108,7 @@ function dijkstra(grafo: Grafo, origem: string, destino: string): { distancia: n
   return { distancia: distancias[destino], caminho };
 }
 
-const origem = 'Parque do Japão';
+const origem = 'Parque do Ingá';
 const destino = 'Bosque das Grevíleas';
 
 const resultadoDistancia = dijkstra(grafoComDistancia, origem, destino);
