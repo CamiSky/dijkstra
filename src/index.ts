@@ -10,6 +10,7 @@ const grafoComDistancia: Grafo = {
     'Estádio Willie Davids': 2.2,
   },
   'Parque do Ingá': {
+    'Catedral': 0.7,
     'Estádio Willie Davids': 2.7,
     'Museu da Bacia do Paraná': 3.3,
     'Parque do Japão': 6.3,
@@ -27,6 +28,7 @@ const grafoComDistancia: Grafo = {
     'Museu da Bacia do Paraná': 8.0,
   },
   'Bosque das Grevíleas': {
+    'Catedral': 3.0,
     'Parque do Ingá': 3.5,
   },
 };
@@ -37,23 +39,25 @@ const grafoComImportancia: Grafo = {
     'Estádio Willie Davids': 42,
   },
   'Parque do Ingá': {
+    'Catedral': 7,
     'Estádio Willie Davids': 47,
-    'Museu da Bacia do Paraná': 63,
-    'Parque do Japão': 103,
+    'Museu da Bacia do Paraná': 73,
+    'Parque do Japão': 93,
   },
   'Estádio Willie Davids': {
-    'Bosque das Grevíleas': 88,
-    'Parque do Japão': 121,
-    'Museu da Bacia do Paraná': 48,
+    'Bosque das Grevíleas': 98,
+    'Parque do Japão': 111,
+    'Museu da Bacia do Paraná': 58,
   },
   'Museu da Bacia do Paraná': {
-    'Bosque das Grevíleas': 81,
-    'Parque do Japão': 108,
+    'Bosque das Grevíleas': 91,
+    'Parque do Japão': 98,
   },
   'Parque do Japão': {
-    'Museu da Bacia do Paraná': 110,
+    'Museu da Bacia do Paraná': 120,
   },
   'Bosque das Grevíleas': {
+    'Catedral': 30,
     'Parque do Ingá': 45,
   },
 };
@@ -104,7 +108,7 @@ function dijkstra(grafo: Grafo, origem: string, destino: string): { distancia: n
   return { distancia: distancias[destino], caminho };
 }
 
-const origem = 'Parque do Ingá';
+const origem = 'Parque do Japão';
 const destino = 'Bosque das Grevíleas';
 
 const resultadoDistancia = dijkstra(grafoComDistancia, origem, destino);
